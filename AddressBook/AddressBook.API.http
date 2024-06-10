@@ -1,0 +1,31 @@
+﻿@AddressBook_HostAddress = https://localhost:7086
+
+
+
+
+GET {{AddressBook_HostAddress}}/addressbook/getAddress
+
+
+###
+
+GET {{AddressBook_HostAddress}}/addressbook/getAddress/Katowice
+
+###
+
+
+POST {{AddressBook_HostAddress}}/addressbook/addAddress
+Content-Type: application/json
+{
+  "Street": "ul. Królewska 1",
+  "City": "Warszawa",
+  "PostalCode": "00-001",
+  "Name": "Jan Kowalski",
+  "PhoneNumber": "123-456-789",
+  "Email": "emil.ds@example.com"
+}
+
+###
+
+GET {{AddressBook.API_HostAddress}}/addressbook/getAllAddress
+
+###
